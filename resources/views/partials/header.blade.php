@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    {{ Route::currentRouteName()}}
-    <div class="header">
+    <div class="headerx">
         <img src="{{ Vite::asset('/resources/img/dc-logo.png') }}" alt="">
 
 
