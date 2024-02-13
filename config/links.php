@@ -3,12 +3,12 @@ return [
     'links' => [
         [
             'label' => 'CHARACTERS',
-            'link' => '#',
+            'link' => 'characters',
             'current' => false
         ],
         [
             'label' => 'COMICS',
-            'link' => '#',
+            'link' => 'comics',
             'current' => true
         ],
         [

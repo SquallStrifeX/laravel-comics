@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    {{ Route::currentRouteName()}}
     <div class="header">
         <img src="{{ Vite::asset('/resources/img/dc-logo.png') }}" alt="">
 
@@ -14,7 +15,7 @@
             <ul>
                   @foreach ($links as $link)
                   <li>
-                <a class= "{{$link['current'] ? 'active' : ''}}" href="{{$link['link']}}">
+                <a class= "{{ Route::currentRouteName() === $link['link'] ? 'active' : ''}}" href="{{$link['link']}}">
                 {{$link['label']}}
             </a>
 
