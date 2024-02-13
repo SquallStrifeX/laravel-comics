@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $links = config('links.links');
-    return view(('home'), compact('links'));
+    $footer_lists = config('footer_list');
+    $socials = config('footer_social');
+    return view(('home'), compact('links', 'footer_lists', 'socials'));
 });
 
+
+Route::get('/comics,' function()){
+
+}
